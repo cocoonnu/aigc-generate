@@ -57,22 +57,22 @@ function App() {
     const handleKeyPress = (e) => {
       const currentDir = directionRef.current;
       let newDir = currentDir;
-
+      console.log(e.key);
       switch (e.key) {
         case "ArrowUp":
-        case "KeyW":
+        case "w":  // 修改 KeyW → w
           if (currentDir.y === 0) newDir = { x: 0, y: -1 };
           break;
         case "ArrowDown":
-        case "KeyS":
+        case "s":  // 修改 KeyS → s
           if (currentDir.y === 0) newDir = { x: 0, y: 1 };
           break;
         case "ArrowLeft":
-        case "KeyA":
+        case "a":  // 修改 KeyA → a
           if (currentDir.x === 0) newDir = { x: -1, y: 0 };
           break;
         case "ArrowRight":
-        case "KeyD":
+        case "d":  // 修改 KeyD → d
           if (currentDir.x === 0) newDir = { x: 1, y: 0 };
           break;
       }
