@@ -1,0 +1,30 @@
+# 依赖
+node_modules/
+
+# 构建产物
+dist/
+.build/
+
+# 缓存和日志
+.cache/
+npm-debug.log*
+.yarn-integrity
+
+# 环境变量
+.env*.local
+
+# IDE配置
+.vscode/
+.idea/
+
+# 系统文件
+.DS_Store
+
+# 测试覆盖
+coverage/
+
+# Webpack开发缓存
+.webpack/
+
+# 调试文件
+*.log
